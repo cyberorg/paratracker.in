@@ -1,401 +1,218 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="auto">
 <head>
-  <meta name="generator" content=
-  "HTML Tidy for HTML5 for Linux version 5.6.0">
   <meta charset="UTF-8">
-  <meta name="viewport" content=
-  "width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Welcome to Bir Mesh</title>
-  <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href=
-  "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        /* Create two equal columns that float next to each other */
-        .column {
-            float: left;
-            width: 50%;
-            padding: 10px;
-        }
-
-        /* Clear floats after the columns */
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-
-        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-        @media screen and (max-width: 600px) {
-            .column {
-                width: 100%;
-            }
-        }
-
-        /* Navigation styling */
-        .topnav {
-            overflow: hidden;
-            background-color: #333;
-        }
-
-        .topnav a {
-            float: left;
-            display: block;
-            color: #f2f2f2;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 17px;
-        }
-
-        .topnav a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-
-        .topnav a.active {
-            background-color: #04AA6D;
-            color: white;
-        }
-
-        .topnav .icon {
-            display: none;
-        }
-
-        /* Responsive navigation for mobile */
-        @media screen and (max-width: 600px) {
-            .topnav a:not(:first-child) {
-                display: none;
-            }
-            .topnav a.icon {
-                float: right;
-                display: block;
-            }
-        }
-
-        @media screen and (max-width: 600px) {
-            .topnav.responsive {
-                position: relative;
-            }
-            .topnav.responsive .icon {
-                position: absolute;
-                right: 0;
-                top: 0;
-            }
-            .topnav.responsive a {
-                float: none;
-                display: block;
-                text-align: left;
-            }
-        }
-    a {
-        display: inline-block;
-        vertical-align: middle;
-    }
-        /* Ensure the image scales with the screen width */
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 20px 0;
-            padding: 10px;
-        }
-
-        /* Video container styling */
-        .vid-container {
-            text-align: center;
-            margin: 30px 0;
-        }
-
-        @media (max-width: 768px) {
-            .logo-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        .highlight {
-            text-align: center;
-            padding: 20px;
-            background-color: #f9f9f9;
-        }
-
-        .text-center {
-            text-align: center !important;
-        }
-
-        .section-intro {
-            margin-bottom: 20px;
-            margin-top: 30px;
-        }
-  .scrolling-names {
-  width: 200px;
-  height: 180px; /* Visible area for scrolling */
-  overflow: hidden;
-  position: relative;
-  background: #000;
-  color: #fff;
-  font-size: 18px;
-  text-align: center;
-  display: inline-block;
-  }
-
-  .scrolling-names ul {
-  position: absolute;
-  top: 0;
-  animation: scroll 30s linear infinite; /* Continuous scroll with smooth looping */
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  }
-
-  .scrolling-names li {
-  padding: 10px 0;
-  }
-  .mx-auto {
-  margin-right:auto !important;
-  margin-left:auto !important;
-  }
-  .single-col-max {
-  max-width:760px;
-  }
-
-  @keyframes scroll {
-  0% {
-    transform: translateY(0); /* Start at the top */
-  }
-  100% {
-    transform: translateY(-100%); /* End when the entire list has scrolled up */
-  }
-  }
-
-  </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <img style=
-    "display: block; margin-left: auto;margin-right: auto;" src=
-    "images/paratracker-logo.png">
-  </header>
-<div class="topnav" id="myTopnav">
-        <a class="nav-link py-1" href="https://paratracker.in">Home</a>
-        <a class="nav-link py-1" href="https://live.paratracker.in">Live Tracker</a>
-        <a class="nav-link py-1" href="https://paraguide.in/meshmap">Mesh Map</a>
-        <a class="nav-link py-1" href="https://flyxc.app/">FlyXC.app live tracking</a></li>
-        <a class="nav-link py-1" href="https://bir.localmesh.org/">Wiki</a>
-        <a class="nav-link py-1" href="https://t.me/meshtastic_india">India Meshtastic Telegram</a>
-        <a class="nav-link py-1" href="https://t.me/meshtastic_india">Bir Paragliding Telegram</a>
-        <a class="nav-link py-1" href="DISCLAIMER.html">DISCLAIMER</a>
-  <a href="javascript:void(0);" class="icon" onclick="mynavFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-      </div>
-  <section class="highlight">
-    <p>Welcome to the Bir Mesh. Discover how we're leveraging
-    technology to enhance pilot safety and improve pilots
-    tracking.</p>
-  </section>
-  <h2 class="text-center">Background</h2>
-  <p>A <a href="https://bircom.in/partners.html">group of
-  volunteers</a> are setting up LoRa base stations all across the
-  mountains of Himachal. Using these base stations, which are
-  currently using Meshtastic, pilots are tracked on our <a href=
-  "https://live.paratracker.in">Live Paragliding Tracker</a>
-  developed by <a href=
-  "https://github.com/ketan/paragliding-meshmap">Ketan</a> and even
-  on <a href="https://flyxc.app">FlyXC.app</a>. To find out more
-  you can visit the <a href="https://bircom.in">project
-  website</a>.</p>
-  <h2 class="section-intro text-center">FAQ</h2>
-  <h3>I'm a pilot, how do I get started?</h3>
-  <ol>
-    <li>Purchase a Meshtastic device that operates on the <strong>
-      <ins>868MHz</ins></strong> frequency band. We recommend the
-      T-Echo from LilyGo. You can buy it from <a href=
-      "https://docs.google.com/spreadsheets/d/10p-snL0-lxky0taJKvxZBNUQqcaO5LD9qC_WaZeRUKY/edit?gid=1208512175#gid=1208512175">
-      Hubtronics</a> in India at a discounted community price, or
-      from another vendor of your choice. Although other Meshtastic
-      devices are available, we suggest the T-Echo because it also
-      supports <a href=
-      "https://bir.localmesh.org/doku.php?id=softrf">Soft-RF</a>
-      firmware, which enables it to function as a FLARM/FANET+/OGN
-      beacon. Both SoftRF and Meshtastic version T-echo is the same
-      hardware, just switch the firmware to Meshtastic when using
-      it at Bir for live tracking.<img src="images/T-ECHO-buttons.jpg" width="400px" style="display: block; margin-left: auto; margin-right: auto;" alt=
-      "LilyGo T-Echo" title="LilyGo T-Echo">
-      <p><code>Note:</code> Click the top button once to power on
-      the T-Echo or long press the bottom button to power on/off.
-      Buttons are very delicate so take care you use them with
-      care. Keep the device in the case when flying. Your
-      Meshtastic device may need flashing the latest firmware.
-      Double tap the up button after plugging it into a computer
-      and get the latest from <a href=
-      "https://flasher.meshtastic.org">https://flasher.meshtastic.org</a>.
-      Use version 2.4+ beta or alpha, do not use 2.5 for now as it
-      does not allow precise location on the default channel.</p>
-    </li>
-    <li>Download a configuration file for your meshtastic device
-    from <a href="https://live.paratracker.in/?configure">the
-    tracker configuration</a>.
-    </li>
-    <li>Install the Meshtastic app from the <a href=
-    "https://play.google.com/store/apps/details?id=com.geeksville.mesh&amp;referrer=utm_source=downloads-page">
-      Google Play Store</a> or the <a href=
-      "https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=1586432531">
-      Apple App Store</a>.
-    </li>
-    <li>From the meshtastic app, import the downloaded
-    configuration file into your meshtastic device. <strong>Do not
-    make any configuration changes</strong> after import as wrong
-    configuration may prevent your device being tracked.</li>
-    <li>The downloaded configuration sets the Bluetooth pin to
-    <code>123456</code>. For your own safety and security, please
-    change the pin from the settings section of the meshtastic
-    app.</li>
-    <li>To show your device on <a href=
-    "https://flyxc.app">FlyXC.app</a>, find your UUID from
-      <a href="https://live.paratracker.in">our tracker</a>, search
-      for your node or locate it on the map. Sign in with google
-      account at <a href=
-      "https://flyxc.app/devices">https://flyxc.app/devices</a>,
-      enable tracking, enable Bircom and enter your device UUID.
-      Please note that if you change LongName or ShortName or your
-      device, a new UUID is generated, which you will have to
-      update on flyxc.<img src="images/flyxc-config.jpg" alt=
-      "Flyxc Setup" title="Flyxc Setup">
-    </li>
-    <li>From the meshtastic app, send a message on
-    <strong>LongFast</strong>, and see if it shows up on the map at
-    <a href=
-    "https://live.paratracker.in">https://live.paratracker.in</a>,
-    in addition to <a href="https://t.me/meshtastic_india/22">the
-    telegram group</a>.
-    </li>
-    <li>Check if you're visible on <a href=
-    "https://flyxc.app/">https://flyxc.app/</a>. This requires that
-    you have a GPS fix, so make sure you're not indoors.
-    </li>
-    <li>If you are flying anywhere other than Bir, enable MQTT on
-    some of the internet-connected nodes, if the internect
-    connectivity is good, you may enable MQTT on more devices. All
-    the nodes in your mesh will show up on <a href=
-    "https://live.paratracker.in">https://live.paratracker.in</a>
-    or <a href=
-    "https://tracker.bircom.in">https://tracker.bircom.in</a>.
-    </li>
-  </ol>
-  <h3>How do I contribute to the community?</h3>
-  <ol>
-    <li>Join our Meshtastic Telegram group at <a href=
-    "https://t.me/meshtastic_india">https://t.me/meshtastic_india</a>.
-    </li>
-    <li>Join our Bir Paragliding Community Telegram group at
-    <a href=
-    "https://t.me/BirParaglidingCommunity">https://t.me/BirParaglidingCommunity</a>.
-    </li>
-    <li>Checkout the project website at <a href=
-    "https://bircom.in/">Bircom.in</a>.
-    </li>
-  </ol>
-  <div>
-    <h2 class="section-intro text-center">Video Guide to Set Up
-    Your Device(same as above)</h2><iframe height="400" src=
-    "https://www.youtube.com/embed/2WmeB3HjMMA?si=jBLCObzHwMgUhE3Z"
-    title="YouTube video player" frameborder="0" allow=
-    "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerpolicy="strict-origin-when-cross-origin"
-    allowfullscreen></iframe>
-  </div>
-  <div>
-    <h2 class="section-intro text-center">Overview of the
-    Meshtastic network at Bir in Hindi, with captions in many
-    languages.</h2><iframe height="400" src=
-    "https://www.youtube.com/embed/wSaaBghSEbM?si=yijH9SCF5bnhj1r-"
-    title="Overview of the Meshtastic network at Bir" frameborder=
-    "0" allow=
-    "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerpolicy="strict-origin-when-cross-origin"
-    allowfullscreen></iframe>
-  </div>
-  <div class="container">
-    <h3 class="section-intro section-heading text-center mb-5">Bir
-    tracking mesh network is supported by</h3>
-    <div class="section-intro single-col-max mx-auto text-center">
-      <a href="https://indusparagliding.in/"><img src=
-      "images/indus.png" alt="Indus Paragliding" width="200"></a>
-      <a href="https://flynirvana.com/"><img src=
-      "images/nirvana.png" alt="Nirvana" width="200"></a> <a href=
-      "https://orangelifeadventures.com/"><img src=
-      "images/Orangelife.png" alt="Orangelife Adventures" width=
-      "200"></a> <a href="https://parabooking.com/"><img src=
-      "images/parabooking.png" alt="Parabooking" width="200"></a>
-      <a href="https://www.templepilots.com/"><img src=
-      "images/templepilots.png" alt="Temple Pilots" width=
-      "200"></a> <a href=
-      "https://www.paraglidingmantra.com/"><img src=
-      "https://static.wixstatic.com/media/3224c0_e759f88332124d3cafd7cab318378286~mv2.jpeg/v1/fill/w_150,h_56,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Logo%20black.jpeg"
-      alt="Paragliding Mantra" width="200"></a> <a href=
-      "https://www.facebook.com/paraglidingindia/"><img src=
-      "images/wings.jpg"
-      alt="Wings and Flights" width="200"></a> <a href=
-      "https://spaceapple.com/"><img src=
-      "https://spaceapple.com/wp-content/uploads/2020/02/logo.png"
-      width="200"></a> <a href="https://paragliding.guru"><img src=
-      "https://paragliding.guru/wp-content/uploads/2022/11/WhatsApp-Image-2022-11-21-at-8.58.11-PM-150x150.jpeg"
-      width="200"></a> <a href="https://www.flynandi.com"><img src=
-      "https://www.flynandi.com/required/logo.gif" width="200"></a>
-      <a href="https://thelumihotels.com"><img src=
-      "images/lumi.png"
-      width="200"></a> <a href=
-      "https://www.paraglidingassociationofindia.org/"><img src=
-      "https://www.paraglidingassociationofindia.org/wp-content/uploads/2020/11/logo.png"
-      width="200"></a> <a href=
-      "https://www.youtube.com/c/flyingstories"><img src=
-      "images/Flying-Stories-Logo-Warm.png" width="200"></a>
-      <a href="https://flyxc.app"><img src=
-      "images/flyxc-sticker.png" width="200"></a> <a href=
-      "https://www.airandadventure.com/"><img src="images/WPA.jpg"
-      width="200"></a>
-      <a href="https://birbillingparagliding.com/"><img src="images/rudraadventures.png" width="200"></a>
-      <a href="https://milaap.org/fundraisers/support-paragliding-pilots-in-india/"><div class="scrolling-names">
-        <ul id="name-list"></ul>
-      </div></a>
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+        <symbol id="check2" viewBox="0 0 16 16">
+          <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+        </symbol>
+        <symbol id="circle-half" viewBox="0 0 16 16">
+          <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+        </symbol>
+        <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+          <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+          <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+        </symbol>
+        <symbol id="sun-fill" viewBox="0 0 16 16">
+          <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+        </symbol>
+      </svg>
+<div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+    <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
+            id="bd-theme"
+            type="button"
+            aria-expanded="false"
+            data-bs-toggle="dropdown"
+            aria-label="Toggle theme (auto)">
+        <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
+        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+        <li>
+        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+            Light
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+        </button>
+        </li>
+        <li>
+        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+            Dark
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+        </button>
+        </li>
+        <li>
+        <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#circle-half"></use></svg>
+            Auto
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+        </button>
+        </li>
+    </ul>
+</div>
+<header>
+<img style="display: block; margin-left: auto;margin-right: auto;" src="images/paratracker-logo.png">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <!-- <a class="navbar-brand" href="#">PARATRACKER</a> -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">HOME</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  LIVE TRACKING
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Mesh Tracker</a></li>
+                  <li><a class="dropdown-item" href="#">Mesh Map</a></li>
+                  <li><a class="dropdown-item" href="#">FlyXC.app Live</a></li>
+                  <li><a class="dropdown-item" href="#">PureTrack.io</a></li>
+                </ul>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">WIKI</a>
+            </li>
+            <li class="nav-item dropdown"></li>
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  DISCUSS
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">India Meshtastic Telegram</a></li>
+                  <li><a class="dropdown-item" href="#">Bir Paragliding Telegram</a></li>
+                </ul>
+            <li class="nav-item">
+                <a class="nav-link" href="#">DISCLAIMER</a>
+            </li>
+        </ul>
+        </div>
     </div>
-  </div><br>
-  <br>
-  <script>
+    </nav>
+</header>
+<section class="p-5 bg-body-secondary">
+    <div class="container mt-4">
+        <h1 class="text-center">Welcome to Bir Mesh Network</h1>
+        <p class="text-center">Discover how we're leveraging technology to enhance pilot safety and improve pilots tracking.</p>
+        
+        <p><strong>Background: </strong>A <a href="https://bircom.in/partners.html">group of volunteers</a> are setting up LoRa base stations all across the mountains of Himachal. Using these base stations, which are currently using Meshtastic, pilots are tracked on our <a href="https://live.paratracker.in">Live Paragliding Tracker</a> developed by <a href="https://github.com/ketan/paragliding-meshmap">Ketan</a> and even on <a href="https://flyxc.app">FlyXC.app</a>. To find out more you can visit the <a href="https://bircom.in">project website</a>.</p>
+        </div>
+</section>
 
-  function mynavFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-  }
-  </script> 
-  <script>
+<section class="my-5 px-5 py-3">
+    <h2 class="text-center my-5">Frequently Asked Questions</h2>
+    <h3>I'm a pilot, how do I get started?</h3>
+    <ol>
+        <li>Purchase a Meshtastic device that operates on the <strong><ins>868MHz</ins></strong> frequency band. We recommend the T-Echo from LilyGo. You can buy it from <a href="https://docs.google.com/spreadsheets/d/10p-snL0-lxky0taJKvxZBNUQqcaO5LD9qC_WaZeRUKY/edit?gid=1208512175#gid=1208512175">Hubtronics</a> in India at a discounted community price, or from another vendor of your choice. Although other Meshtastic devices are available, we suggest the T-Echo because it also supports <a href="https://bir.localmesh.org/doku.php?id=softrf">Soft-RF</a>firmware, which enables it to function as a FLARM/FANET+/OGN beacon. Both SoftRF and Meshtastic version T-echo is the same hardware, just switch the firmware to Meshtastic when using it at Bir for live tracking.
+        <img src="images/T-ECHO-buttons.jpg" width="400px" style="display: block; margin-left: auto; margin-right: auto;" alt="LilyGo T-Echo" title="LilyGo T-Echo">
+        <p><code>Note:</code> Click the top button once to power on the T-Echo or long press the bottom button to power on/off. Buttons are very delicate so take care you use them with care. Keep the device in the case when flying. Your Meshtastic device may need flashing the latest firmware. Double tap the up button after plugging it into a computer and get the latest from <a href="https://flasher.meshtastic.org">https://flasher.meshtastic.org</a>. Use version 2.4+ beta or alpha, do not use 2.5 for now as it does not allow precise location on the default channel.</p>
+        </li>
+        <li>Download a configuration file for your meshtastic device from <a href="https://live.paratracker.in/?configure">the tracker configuration</a>.
+        </li>
+        <li>Install the Meshtastic app from the <a href="https://play.google.com/store/apps/details?id=com.geeksville.mesh&amp;referrer=utm_source=downloads-page">Google Play Store</a> or the <a href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=1586432531">Apple App Store</a>.
+        </li>
+        <li>From the meshtastic app, import the downloaded configuration file into your meshtastic device. <strong>Do not make any configuration changes</strong> after import as wrong configuration may prevent your device being tracked.</li>
+        <li>The downloaded configuration sets the Bluetooth pin to <code>123456</code>. For your own safety and security, please
+        change the pin from the settings section of the meshtastic app.</li>
+        <li>To show your device on <a href="https://flyxc.app">FlyXC.app</a>, find your UUID from <a href="https://live.paratracker.in">our tracker</a>, search for your node or locate it on the map. Sign in with google account at <a href="https://flyxc.app/devices">https://flyxc.app/devices</a>, enable tracking, enable Bircom and enter your device UUID. Please note that if you change LongName or ShortName or your device, a new UUID is generated, which you will have to update on flyxc.<img src="images/flyxc-config.jpg" alt="Flyxc Setup" title="Flyxc Setup"></li>
+        <li>From the meshtastic app, send a message on <strong>LongFast</strong>, and see if it shows up on the map at <a href=
+        "https://live.paratracker.in">https://live.paratracker.in</a>, in addition to <a href="https://t.me/meshtastic_india/22">the     telegram group</a>.</li>
+        <li>Check if you're visible on <a href="https://flyxc.app/">https://flyxc.app/</a>. This requires that you have a GPS fix, so make sure you're not indoors.</li>
+        <li>If you are flying anywhere other than Bir, enable MQTT on some of the internet-connected nodes, if the internect connectivity is good, you may enable MQTT on more devices. All the nodes in your mesh will show up on <a href="https://live.paratracker.in">https://live.paratracker.in</a> or <a href="https://tracker.bircom.in">https://tracker.bircom.in</a>.
+        </li>
+    </ol>
+    <h3>How can I contribute?</h3>
+    <ol>
+        <li>Join our Meshtastic Telegram group at <a href="https://t.me/meshtastic_india">https://t.me/meshtastic_india</a>.</li>
+        <li>Join our Bir Paragliding Community Telegram group at <a href=
+        "https://t.me/BirParaglidingCommunity">https://t.me/BirParaglidingCommunity</a>.</li>
+        <li>Checkout the project website at <a href="https://bircom.in/">Bircom.in</a>.</li>
+    </ol>
+</section>
 
-  fetch('milaap.txt')
-    .then(response => response.text())
-    .then(data => {
-      const names = data.split('\n').filter(name => name.trim() !== '');
-      const ul = document.getElementById('name-list');
+<section class="text-center my-5 p-5 bg-body-secondary">
+    <h2 class="text-center my-5">Video Guides</h2>
+    <h3 class="text-center my-3">Setting-up your device</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/2WmeB3HjMMA?si=OQHyL6F3BzPsJhWL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+    <h3 class="text-center mt-5 mb-3">An introduct in Hindi, with multi-lingual closed captions</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/wSaaBghSEbM?si=W_MLuHMsbtEK_9qp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</section>
 
-      // Append names to the <ul>
-      names.forEach(name => {
-        const li = document.createElement('li');
-        li.textContent = name;
-        ul.appendChild(li);
-      });
+<section class="my-5">
+    <h2 class="text-center my-5">Supporters</h2>
+    <ul class="supporter-logo text-center">
+        <li>
+            <a href="https://indusparagliding.in/"><img src="images/indus.png" alt="Indus Paragliding" width="200"></a>
+        </li>
+        <li>
+            <a href="https://flynirvana.com/"><img src="images/nirvana.png" alt="Nirvana" width="200"></a>
+        </li>
+        <li>
+            <a href="https://orangelifeadventures.com/"><img src="images/Orangelife.png" alt="Orangelife Adventures" width="200"></a>
+        </li>
+        <li>
+            <a href="https://parabooking.com/"><img src="images/parabooking.png" alt="Parabooking" width="180"></a>
+        </li>
+        <li>
+            <a href="https://www.templepilots.com/"><img src="images/templepilots.png" alt="Temple Pilots" width="200"></a>
+        </li>
+        <li>
+            <a href="https://www.paraglidingmantra.com/"><img src="https://static.wixstatic.com/media/3224c0_e759f88332124d3cafd7cab318378286~mv2.jpeg/v1/fill/w_150,h_56,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Logo%20black.jpeg" alt="Paragliding Mantra" width="200"></a>
+        </li>
+        <li>
+            <a href="https://www.facebook.com/paraglidingindia/"><img src="images/wings.jpg" alt="Wings and Flights" width="200"></a>
+        </li>
+        <li>
+            <a href="https://spaceapple.com/"><img src="https://spaceapple.com/wp-content/uploads/2020/02/logo.png" width="200"></a>
+        </li>
+        <li>
+            <a href="https://paragliding.guru"><img src="https://paragliding.guru/wp-content/uploads/2022/11/WhatsApp-Image-2022-11-21-at-8.58.11-PM-150x150.jpeg" width="200"></a>
+        </li>
+        <li>
+            <a href="https://www.flynandi.com"><img src="https://www.flynandi.com/required/logo.gif" width="200"></a>
+        </li>
+        <li>
+            <a href="https://thelumihotels.com"><img src="images/lumi.png" width="200"></a>
+        </li>
+        <li>
+            <a href="https://www.paraglidingassociationofindia.org/"><img src="https://www.paraglidingassociationofindia.org/wp-content/uploads/2020/11/logo.png" width="200"></a>
+        </li>
+        <li>
+            <a href="https://www.youtube.com/c/flyingstories"><img src="images/Flying-Stories-Logo-Warm.png" width="200"></a>
+        </li>
+        <li>
+            <a href="https://flyxc.app"><img src="images/flyxc-sticker.png" width="200"></a>
+        </li>
+        <li>
+            <a href="https://www.airandadventure.com/"><img src="images/WPA.jpg" width="200"></a>
+        </li>
+        <li>
+            <a href="https://birbillingparagliding.com/"><img src="images/rudraadventures.png" width="200"></a>
+        </li>
+        <li>
+            <a href="https://milaap.org/fundraisers/support-paragliding-pilots-in-india/">
+                <div class="scrolling-names">
+                <ul id="name-list"><li>Manjeet</li><li>Sidharth</li><li>Temple Pilots</li><li>Suveer</li><li>Prady</li><li>Harsha</li><li>The Lumi</li><li>Xtacee</li><li>Vikram-Mhatre</li><li>ParaglidingMantra</li><li>Wings &amp; Flights</li><li>Jitendra</li><li>Vijay Soni</li><li>Thirumurugan</li><li>Indus Paragliding</li><li>Space Apple</li><li>Shirish</li><li>Western Paragliding Association</li><li>Badari</li><li>Foram</li><li>Vishal</li><li>Rajesh</li><li>Arvind Oak</li><li>Dushyant</li><li>Somnath</li><li>Chandrashekar</li><li>Nik</li><li>Win</li><li>Shraddha</li><li>Yogesh</li><li>Narayan</li><li>Burzin</li><li>Sunith Rao</li><li>Arif</li><li>Vishwa</li><li>Badari</li><li>Ajinkya</li><li>BHARAT</li><li>Paramjeet</li><li>Siddharth</li><li>Arvind</li><li>Kaustubh</li><li>Mangesh</li><li>Daksh</li><li>Srikanth</li><li>Surendhran</li><li>Gokul</li><li>Puneet</li><li>Aniket</li><li>Subhash</li><li>ALTAF</li><li>Subramaniam</li><li>V</li><li>Sajid</li><li>Rohit Kawalay</li><li>Rajan</li><li>Sameer</li><li>Sandeep</li><li>Dushyant</li><li>Clint</li><li>Sahil</li><li>Samir</li><li>Vrun</li><li>HUBTRONICS</li><li>Vistasp</li><li>Rudrajit</li><li>Raghu</li><li>ParaBooking.com</li><li>Ikh</li><li>Paraguide.in</li><li>Tony</li><li>Arvind</li><li>Simen</li><li>Ashish</li><li>Anuj</li><li>ASLAM</li><li>Ketan</li><li>Khushroo</li><li>Bikram</li><li>Karan</li><li>Arabind Menon</li><li>Gajender</li><li>CS Rathore</li></ul>
+                </div>
+            </a>
+        </li>
+    </ul>
+</section>
+  
 
-      // No need to duplicate names here, CSS will handle smooth scrolling
-    });
-  </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://getbootstrap.com/docs/5.3/assets/js/color-modes.js"></script>
+
 </body>
 </html>

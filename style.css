@@ -1,0 +1,94 @@
+img {
+    max-width: 100%;;
+}
+
+iframe {
+    height:300px;
+    max-width: 100%;
+    width: 600px;
+}
+
+.bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+}
+
+.btn-bd-primary {
+    --bd-violet-bg: #712cf9;
+    --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+    --bs-btn-font-weight: 600;
+    --bs-btn-color: var(--bs-white);
+    --bs-btn-bg: var(--bd-violet-bg);
+    --bs-btn-border-color: var(--bd-violet-bg);
+    --bs-btn-hover-color: var(--bs-white);
+    --bs-btn-hover-bg: #6528e0;
+    --bs-btn-hover-border-color: #6528e0;
+    --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+    --bs-btn-active-color: var(--bs-btn-hover-color);
+    --bs-btn-active-bg: #5a23c8;
+    --bs-btn-active-border-color: #5a23c8;
+}
+
+.bd-mode-toggle {
+    z-index: 1500;
+}
+
+.bd-mode-toggle .dropdown-menu .active .bi {
+    display: block !important;
+}
+
+.navbar-nav {
+    margin:0 auto;
+}
+
+.supporter-logo > li {
+    list-style: none;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    padding: 5px;
+    align-content: center;
+}
+
+.scrolling-names {
+    width: 200px;
+    height: 180px; /* Visible area for scrolling */
+    overflow: hidden;
+    position: relative;
+    background: #000;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    display: inline-block;
+}
+
+.scrolling-names ul {
+    position: absolute;
+    top: 0;
+    animation: scroll 30s linear infinite; /* Continuous scroll with smooth looping */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.scrolling-names li {
+    padding: 10px 0;
+}
+.mx-auto {
+    margin-right:auto !important;
+    margin-left:auto !important;
+}
+.single-col-max {
+    max-width:760px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateY(0); /* Start at the top */
+    }
+    100% {
+        transform: translateY(-100%); /* End when the entire list has scrolled up */
+    }
+}
