@@ -62,6 +62,12 @@ html[data-bs-theme='light'] .logo-light {
     max-width:800px;
 }
 
+@media (max-width: 800px) {
+    .faqs > li img {
+        max-width:80vw;
+    }
+  }
+
 .supporter-logo > li {
     list-style: none;
     display: inline-block;
