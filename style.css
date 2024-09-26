@@ -1,5 +1,5 @@
 img {
-    max-width: 100%;;
+    max-width: 100%;
 }
 
 iframe {
@@ -58,15 +58,19 @@ html[data-bs-theme='light'] .logo-light {
     display: block;
 }
 
+.faqs > li img {
+    max-width:800px;
+}
+
 .supporter-logo > li {
     list-style: none;
     display: inline-block;
     width: 200px;
     height: 200px;
     margin: 10px;
-    padding: 5px;
     align-content: center;
     vertical-align: middle;
+    background:#fff;
 }
 
 .supporter-logo > li img {
@@ -75,7 +79,7 @@ html[data-bs-theme='light'] .logo-light {
 
 .scrolling-names {
     width: 200px;
-    height: 180px; /* Visible area for scrolling */
+    height: 200px; /* Visible area for scrolling */
     overflow: hidden;
     position: relative;
     background: #000;

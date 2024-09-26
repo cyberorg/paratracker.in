@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="auto">
+<html lang="en" data-bs-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -117,9 +117,9 @@
 <section class="my-5 px-3 px-md-5 py-3">
     <h2 class="text-center my-5">Frequently Asked Questions</h2>
     <h3>I'm a pilot, how do I get started?</h3>
-    <ol>
+    <ol class="faqs">
         <li>Purchase a Meshtastic device that operates on the <strong><ins>868MHz</ins></strong> frequency band. We recommend the T-Echo from LilyGo. You can buy it from <a href="https://docs.google.com/spreadsheets/d/10p-snL0-lxky0taJKvxZBNUQqcaO5LD9qC_WaZeRUKY/edit?gid=1208512175#gid=1208512175">Hubtronics</a> in India at a discounted community price, or from another vendor of your choice. Although other Meshtastic devices are available, we suggest the T-Echo because it also supports <a href="https://bir.localmesh.org/doku.php?id=softrf">Soft-RF</a>firmware, which enables it to function as a FLARM/FANET+/OGN beacon. Both SoftRF and Meshtastic version T-echo is the same hardware, just switch the firmware to Meshtastic when using it at Bir for live tracking.
-        <img src="images/T-ECHO-buttons.jpg" width="400px" style="display: block; margin-left: auto; margin-right: auto;" alt="LilyGo T-Echo" title="LilyGo T-Echo">
+        <img src="images/T-ECHO-buttons.jpg" class="d-block mx-auto my-3" width="400px" alt="LilyGo T-Echo" title="LilyGo T-Echo">
         <p><code>Note:</code> Click the top button once to power on the T-Echo or long press the bottom button to power on/off. Buttons are very delicate so take care you use them with care. Keep the device in the case when flying. Your Meshtastic device may need flashing the latest firmware. Double tap the up button after plugging it into a computer and get the latest from <a href="https://flasher.meshtastic.org">https://flasher.meshtastic.org</a>. Use version 2.4+ beta or alpha, do not use 2.5 for now as it does not allow precise location on the default channel.</p>
         </li>
         <li>Download a configuration file for your meshtastic device from <a href="https://live.paratracker.in/?configure">the tracker configuration</a>.
@@ -129,12 +129,14 @@
         <li>From the meshtastic app, import the downloaded configuration file into your meshtastic device. <strong>Do not make any configuration changes</strong> after import as wrong configuration may prevent your device being tracked.</li>
         <li>The downloaded configuration sets the Bluetooth pin to <code>123456</code>. For your own safety and security, please
         change the pin from the settings section of the meshtastic app.</li>
-        <li>To show your device on <a href="https://flyxc.app">FlyXC.app</a>, find your UUID from <a href="https://live.paratracker.in">our tracker</a>, search for your node or locate it on the map. Sign in with google account at <a href="https://flyxc.app/devices">https://flyxc.app/devices</a>, enable tracking, enable Bircom and enter your device UUID. Please note that if you change LongName or ShortName or your device, a new UUID is generated, which you will have to update on flyxc.<img src="images/flyxc-config.jpg" alt="Flyxc Setup" title="Flyxc Setup"></li>
-        <li>From the meshtastic app, send a message on <strong>LongFast</strong>, and see if it shows up on the map at <a href=
-        "https://live.paratracker.in">https://live.paratracker.in</a>, in addition to <a href="https://t.me/meshtastic_india/22">the     telegram group</a>.</li>
+        <li>Find and copy your device UUID from <a href="https://live.paratracker.in">our tracker</a>, search for your node or locate it on the map. Please note that if you change LongName or ShortName or your device, a new UUID is generated, which will have to be updated on FlyXC.app or Puretrack.io.</li>
+        <li>To show your device on <a href="https://flyxc.app">FlyXC.app</a>. Sign in with google account at <a href="https://flyxc.app/devices">https://flyxc.app/devices</a>, enable tracking, enable Bircom and enter your device UUID.
+            <img src="images/flyxc-config.jpg" class="d-block mx-auto my-3" alt="Flyxc Setup" title="Flyxc Setup"></li>
+        <li>All Meshtastic devices flying at Bir or using Bircom MQTT will automatically show up on <a href="https://puretrack.io">Puretrack.io</a>. To link it to your account, paste your device UUID on <a href="https://puretrack.io/add/bircom">puretrack.io/add/bircom</a> after signing in.
+            <img src="images/puretrack-bircom.jpeg" class="d-block mx-auto my-3" alt="Puretrack.io Setup" title="Puretrack.io Setup"></li>
+        <li>From the meshtastic app, send a message on <strong>LongFast</strong>, and see if it shows up on the map at <a href="https://live.paratracker.in">https://live.paratracker.in</a>, in addition to <a href="https://t.me/meshtastic_india/22">the telegram group</a>.</li>
         <li>Check if you're visible on <a href="https://flyxc.app/">https://flyxc.app/</a>. This requires that you have a GPS fix, so make sure you're not indoors.</li>
-        <li>If you are flying anywhere other than Bir, enable MQTT on some of the internet-connected nodes, if the internect connectivity is good, you may enable MQTT on more devices. All the nodes in your mesh will show up on <a href="https://live.paratracker.in">https://live.paratracker.in</a> or <a href="https://tracker.bircom.in">https://tracker.bircom.in</a>.
-        </li>
+        <li>If you are flying anywhere other than Bir, enable MQTT on some of the internet-connected nodes, if the internet connectivity is good, you may enable MQTT on more devices. All the nodes in your mesh will show up on <a href="https://live.paratracker.in">https://live.paratracker.in</a> or <a href="https://tracker.bircom.in">https://tracker.bircom.in</a>.</li>
     </ol>
     <h3>How can I contribute?</h3>
     <ol>
