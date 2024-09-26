@@ -41,6 +41,23 @@ iframe {
     margin:0 auto;
 }
 
+.logo-light,
+.logo-dark {
+    max-width: 500px;
+    width:80%;
+    display: none;
+}
+
+/* Show the dark theme logo when the dark theme is active */
+html[data-bs-theme='dark'] .logo-dark {
+    display: block;
+}
+
+/* Hide the light theme logo when the dark theme is active */
+html[data-bs-theme='light'] .logo-light {
+    display: block;
+}
+
 .supporter-logo > li {
     list-style: none;
     display: inline-block;
